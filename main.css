@@ -1,0 +1,178 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html, body {
+    font-size: 1em;
+    line-height: 1.65em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    background: #fff;
+    color: #444;
+}
+
+body {
+    padding: 2em 2.5em 1em 20em;
+}
+
+html {
+    height: 100%;
+}
+
+.header img {
+    width: 9em;
+    height: 9em;
+    border-radius: 4.5em;
+    -moz-border-radius: 4.5em;
+    -webkit-border-radius: 4.5em;
+    border: 2px solid #FFF;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    background-color: #262626;
+    color: #FFF;
+    border-right: 1px #eee solid;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 13.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bree Serif", serif;
+    font-weight: 400 !important;
+}
+
+h1 a {
+    color: #FFF;
+    font-weight: 400 !important;
+    text-decoration: none;
+}
+
+article {
+    border-bottom: 0.1em #eee solid;
+    padding-bottom: 1.7em;
+    max-width: 56em;
+}
+
+.content {
+    width: 100%;
+}
+
+p, h4, h5, h6 {
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.post-title {
+    margin-top: 0.35em;
+    margin-bottom: 0.6em;
+}
+
+.follow-icons {
+    font-size: 0.7em;
+    margin-top: -0.7em;
+    margin-bottom: 1.5em;
+}
+
+.follow-icons a {
+    color: #ccc;
+}
+
+.follow-icons a:hover {
+    color: #5cc265;
+  }
+
+  a:hover {
+    text-decoration:underline;
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #5cc265;
+}
+
+  h4 {
+    font-size:1.3em;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
+    line-height: 1.1em;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(20%);
+  }
+
+  /* Large Screens */
+@media only screen and (min-width: 1281px) {
+    html, body {
+      font-size: 1.1em;
+    } 
+  }
+  
+  /* Small Screens */
+  @media only screen and (max-width: 800px) { 
+    body {
+      padding:0;
+    }
+    .header {
+      border-right: none;
+      border-bottom: 1px #eee solid;
+      position:relative;
+      height:auto;
+      width:auto;
+      text-align:center;
+      padding-bottom:1em;
+    }
+    .content {
+      margin-left: 0;
+      padding: 2em 2em 1em 2em;
+      width: auto;
+    }
+  }
+  
+  /* Tiny Screens */
+  @media only screen and (max-width: 320px) { 
+    .header {
+      padding: 1.2em 1.2em 0.6em 1.2em;
+    }
+    .content {
+      padding: 1.2em 1.2em 0.6em 1.2em;
+    }
+  }
+  
